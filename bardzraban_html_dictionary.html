@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<title>Հայերեն Բարբառային Բառարան</title>
+<style>
+body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #faf7f0; }
+h1 { text-align: center; color: #7a4b26; }
+input { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #c2a48a; border-radius: 6px; }
+.word { margin-bottom: 12px; padding: 8px; background: #fff; border-left: 4px solid #a56b3b; border-radius: 4px; }
+.word b { color: #6a3c1a; }
+</style>
+</head>
+<body>
+<h1>Հայերեն Բարբառային Բառարան</h1>
+<input type="text" id="search" placeholder="Որոնել...">
+<div id="dictionary">
+<div class="word"><b>Աբա</b> — 1) Բրդյա կտորի տեսակ։ 2) Կարճ ու լայն թևերով բրդյա վերնազգեստ։ 3) Կարճաթև հագուստ։</div>
+<div class="word"><b>Աբաբուլ</b> — Ծիծեռնակի նման թռչուն։</div>
+<div class="word"><b>Աբանուշ</b> — Շատ հաճելի անուշ բույր ունեցող։</div>
+<div class="word"><b>Աբառողջ</b> — Շատ առողջ, պինդ։</div>
+<div class="word"><b>Աբասանոց</b> — 1) Քսան կոպեկանոց արծաթադրամ։ 2) Քսան կոպեկ արժեք ունեցող բան։ 3) Անպետք, անարժեք։</div>
+<div class="word"><b>Աբավոր</b> — Աբա հագած, աբա կրող։</div>
+<div class="word"><b>Աբարաթին</b> — Հանգիստ, անտարբեր։</div>
+<div class="word"><b>Աբբիկ</b> — Քարկտիկ, խաղի տեսակ։</div>
+<div class="word"><b>Աբդաուբդա</b> — Վայրիվեր, տակնուվրա, գլխիվայր։</div>
+<div class="word"><b>Աբդուղ</b> — Թան, մածնաջուր։</div>
+<div class="word"><b>Աբեթ</b> — Խեղճ, թշվառ։</div>
+<div class="word"><b>Աբել</b> — 1) Աստվածաշնչյան անուն։ 2) Մսի կամ ձկան վրա մի փոքր աղ ցանել։</div>
+<div class="word"><b>Աբեղաթող</b> — Բարեկենդանի շաբաթը, երբ աբեղաներին թույլատրվում է մասնակցել աշխարհիկ զվարճություններին։</div>
+<div class="word"><b>Աբեղաճաշ</b> — Պասուց հեղուկ կերակուր՝ պատրաստված ծեծած ընկույզով կամ կաղինով, սխտորով և քացախով։</div>
+<div class="word"><b>Աբեղուկ</b> — Դաշտային երգեցիկ փոքր թռչուն՝ գլխին կատարով։</div>
+<div class="word"><b>Աբըթբուդ</b> — Կոպիտ, գռեհիկ մարդ։</div>
+<div class="word"><b>Աբիգ</b> — Հորեղբայր։</div>
+<div class="word"><b>Աբիգյարդան</b> — Երկարակոթ պղնձյա մեծ շերեփ, որով գինի են հանում կարասներից։</div>
+<div class="word"><b>Աբիկ</b> — Ձեռնոց։</div>
+<div class="word"><b>Աբիջ</b> — 1) Տղա։ 2) Թոռ։</div>
+<div class="word"><b>Աբլա</b> — Մայր, մեծ քույր, տիկին։</div>
+<div class="word"><b>Աբլաբուդ</b> — Թափթփված, փնթի։</div>
+<div class="word"><b>Աբլախ</b> — 1) Կլորադեմ, փքված այտերով։ 2) Լայնատերև ջրասեր բույս։</div>
+<div class="word"><b>Աբլանդվա</b> — Տեսիլք, երազային երևույթ։</div>
+<div class="word"><b>Աբլե</b> — Առագաստանավի պարան։</div>
+<div class="word"><b>Աբով</b> — Հույսը մեկի վրա դնել։</div>
+<div class="word"><b>Աբրա</b> — Մանր քարեր, որոնցով որոշում են դատարկ ամանի զանգվածը։</div>
+<div class="word"><b>Աբրան</b> — Առվի կամ ջրանցքի ակունք։</div>
+<div class="word"><b>Աբրաշ</b> — Ասեղ կեռ, տգեղ դեմքով։</div>
+<div class="word"><b>Աբրեշում</b> — Մետաքս։</div>
+<div class="word"><b>Աբրջան</b> — Ապարանջան, կանանց ձեռքի զարդ։</div>
+
+</div>
+<script>
+document.getElementById('search').addEventListener('input', function() {
+    let q = this.value.toLowerCase();
+    document.querySelectorAll('.word').forEach(function(item) {
+        item.style.display = item.textContent.toLowerCase().includes(q) ? '' : 'none';
+    });
+});
+</script>
+</body>
+</html>
